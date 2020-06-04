@@ -27,6 +27,7 @@ plugins {
     id("com.github.johnrengelman.shadow") version "5.2.0"
     id("com.gradle.plugin-publish") version "0.12.0"
     id("de.marcphilipp.nexus-publish") version "0.4.0"
+    id("com.datastax.junitpytest.gradle.writeversion")
 }
 
 description = "DataStax junitpytest - plugin for Gradle"

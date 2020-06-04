@@ -187,6 +187,8 @@ gradle.beforeProject {
     version = versionFromFile
 }
 
+includeBuild("buildSrcComposite")
+
 include("pytest-gradle-plugin")
 include("pytest-junit-engine")
 include("common")

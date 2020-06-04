@@ -84,7 +84,7 @@ public class PytestIntegrationTest
                 .extracting(BuildTask::getOutcome)
                 .allMatch(outcome -> outcome == SUCCESS || outcome == UP_TO_DATE);
 
-        checkJar(new File(rootProjectDir(), "pytest-gradle-plugin/build/libs/pytest-gradle-plugin-" + projectVersion + ".jar"),
+        checkJar(new File(rootProjectDir(), "pytest-gradle-plugin/build/libs/pytest-gradle-plugin-" + projectVersion + "-all.jar"),
                  "META-INF/gradle-plugins/com.datastax.junitpytest.properties",
                  // check that the pytest-plugin is included
                  "com/datastax/junitpytest/junit-pytest-plugin/junit_pytest_plugin.egg-info/PKG-INFO",

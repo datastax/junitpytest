@@ -14,10 +14,13 @@
  * limitations under the License.
  */
 
-repositories {
-    mavenCentral()
-}
+package com.datastax.junitpytest.gradle.tasks
 
-plugins {
-    `kotlin-dsl`
+import org.gradle.api.Plugin
+import org.gradle.api.Project
+
+@Suppress("unused")
+class WriteVersionPlugin : Plugin<Project> {
+    override fun apply(project: Project): Unit = project.run {
+    }
 }

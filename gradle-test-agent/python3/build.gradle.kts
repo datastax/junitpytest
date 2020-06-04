@@ -21,6 +21,7 @@ import com.datastax.junitpytest.gradle.withProjectProperty
 plugins {
     `java-base`
     id("com.bmuschko.docker-java-application") version "6.4.0"
+    id("com.datastax.junitpytest.gradle.writeversion")
 }
 
 val dockerRepos: List<String> = rootProject.extra.get("dockerRepos") as List<String>
